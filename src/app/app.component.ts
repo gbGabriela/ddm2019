@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 
 export class AppComponent{
 
+  nome: string = "Gabriela";
+  valor: string ="";
+
+  clique() : void {
+
+    alert("Boa Noite, " + this.valor + "!");
+
+  }
+
 }
