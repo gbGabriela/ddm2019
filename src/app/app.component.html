@@ -1,14 +1,19 @@
-<h1>Aula 28/02 </h1>
+<div class="container-fluid">
 
-<p>Aula introdutória de Angular</p>
-<p>Boa Noite, {{nome}}</p>
+  <header>
 
-<form>
+    <nav class="navbar navbar-expand-md bg-info">
 
-  <input type="text" name="valor" value="" [(ngModel)] = "valor">
-  <button type="button" name="button" (click)="clique()">Click Here</button>
+        <a routerLink="" class="nav-link text-white">HOME</a>
+        <a routerLink="calculadora" class="nav-link text-white">Calculadora</a>
+        <a routerLink="positivo-negativo" class="nav-link text-white">Positivo/Negativo</a>
+        <a routerLink="imc" class="nav-link text-white">IMC</a>
+        <a routerLink="cadastro-pessoa" class="nav-link text-white">Cadastro de Pessoas</a>
 
+    </nav>
 
+  </header>
 
+</div>
 
-</form>
+<router-outlet></router-outlet>
