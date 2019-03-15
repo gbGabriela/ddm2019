@@ -10,13 +10,14 @@ import { PositivoNegativoComponent } from './paginas/positivo-negativo/positivo-
 import { ImcComponent } from './paginas/imc/imc.component';
 import { CadastroPessoaComponent } from './paginas/cadastro-pessoa/cadastro-pessoa.component';
 
+
 @NgModule({
   declarations: [
     AppComponent, HomeComponent, CalculadoraComponent, PositivoNegativoComponent,
     ImcComponent, CadastroPessoaComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule
+    BrowserModule, AppRoutingModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

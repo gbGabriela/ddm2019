@@ -1,1 +1,28 @@
-<h1>IMAGINE YOUR LOGIN HERE ALREADY LOGGED</h1>
+<div class="">
+
+  <form>
+
+    <input type="text" name="nome" [(ngModel)] = "estado.nome">
+    <input type="text" name="sigla" [(ngModel)]="estado.sigla">
+    <button type="button" name="button"(click)="adicionar()">add</button>
+
+  </form>
+
+<!--<ul>
+
+    <li *ngFor="let nome of nomes">{{ nome }}</li>
+</ul>-->
+
+  <table>
+    <tr *ngFor="let est of nomes; let i = index">
+      <td>{{ est.nome }}</td>
+    </tr>
+    <td>
+        <button type="button" name="button" (click)="excluir()">excluir</button>
+    </td>
+    <td>
+      <button type="button" name="button" (click)="alterar()"><i class="fas fa-address-book"></i></button>
+    </td>
+  </table>
+
+</div>
